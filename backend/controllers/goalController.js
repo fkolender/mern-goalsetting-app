@@ -19,7 +19,7 @@ const setGoals = (req, res) => {
 // access - private
 
 const createGoals = (req, res) => {
-    res.status(200).json({message: `Create goal ${req.params.id}`})
+    res.status(200).json({message: `Create goal`})
 }
 
 // desc - Delete goal
