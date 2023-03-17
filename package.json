@@ -4,7 +4,8 @@
   "description": "A goalsetting app",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "keywords": [
     "MERN",
