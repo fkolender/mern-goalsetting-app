@@ -19,6 +19,11 @@ const setGoals = (req, res) => {
 // access - private
 
 const createGoals = (req, res) => {
+    console.log(req.body)
+    if (!req.body.text){
+        res.status(400)
+        throw new Error('Please add a field to create the goal')
+    }
     res.status(200).json({message: `Create goal`})
 }
 
